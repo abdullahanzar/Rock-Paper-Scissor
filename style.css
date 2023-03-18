@@ -1,0 +1,192 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 98%;
+}
+
+.dash {
+  display: flex;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  position: relative;
+  padding: 0px 10px;
+  top: 4%;
+  left: 21%;
+  width: 750px;
+}
+
+.dash h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 550;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.dash div:nth-child(2) {
+  position: relative;
+  left: 257px;
+  top: 15px;
+  background: #ffffff;
+  border-radius: 9px;
+  width: 139px;
+  height: 128px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash div:nth-child(3) {
+  position: relative;
+  left: 280px;
+  top: 15px;
+  background: #ffffff;
+  border-radius: 9px;
+  width: 139px;
+  height: 128px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash div:nth-child(2) h4 {
+  position: absolute;
+  top: 0%;
+}
+
+.dash div:nth-child(2) h1 {
+  position: absolute;
+  top: 26%;
+  color: black;
+  font-size: 50px;
+}
+
+.dash div:nth-child(3) h4 {
+  position: absolute;
+  top: 0%;
+}
+
+.dash div:nth-child(3) h1 {
+  position: absolute;
+  top: 26%;
+  color: black;
+  font-size: 50px;
+}
+
+.tb {
+  border: 2px black solid;
+  padding: 1px;
+}
+
+.rules {
+  float: right;
+  position: fixed;
+  top: 90%;
+  right: 1.5%;
+}
+
+.rules button {
+  padding: 12px 32px;
+  background: #89c15e;
+  border: 1px white solid;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.rules button:hover {
+  background: #99df;
+}
+
+.game {
+  display: contents;
+  background-color: #fff;
+  border: 1px red solid;
+  position: relative;
+  top: 33%;
+  box-sizing: border-box;
+  width: max-content;
+}
+
+.anchor {
+  display: inline-block;
+  position: relative;
+  top: 176px;
+  left: 667px;
+}
+
+.rock img,
+.paper img,
+.scissor img {
+  width: 135px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.rock img {
+  bottom: 45%;
+  right: 71%;
+}
+
+.scissor img {
+  bottom: 45%;
+  left: 74%;
+}
+
+.paper img {
+  top: 80%;
+  right: 18%;
+}
+
+.popup {
+  visibility: hidden;
+  position: absolute;
+  bottom: 141%;
+  width: 18em;
+  height: 23em;
+  right: -3%;
+  border: 7px solid #fff;
+  border-radius: 13px;
+  background: #004429;
+  color: #fff;
+}
+
+.popup h1 {
+  text-align: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 29px;
+  line-height: 34px;
+
+  color: #ffffff;
+}
+
+.popup li {
+  margin: 0.5em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  list-style-image: url(Resources/list.png);
+}
+
+.cross {
+  position: absolute;
+  width: 50px;
+  top: -6%;
+  right: -23px;
+  cursor: pointer;
+}
+
+
