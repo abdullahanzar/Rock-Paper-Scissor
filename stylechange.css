@@ -5,12 +5,16 @@
 }
 
 @keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes grow {
-  from { 
+  from {
     width: 135px;
   }
   to {
@@ -25,4 +29,225 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+
+.comp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.you {
+  width: 146px;
+}
+
+.playagain,
+.compwin,
+.you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playagain {
+  position: relative;
+  left: -35px;
+}
+
+.YL {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 0px;
+
+  color: #ffffff;
+}
+
+.PK {
+  position: absolute;
+  bottom: 20em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.YP {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.AP {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.PA {
+  background: #ffffff;
+  border-radius: 9px;
+  border: none;
+  width: 10.5em;
+  height: 4em;
+  font-size: inherit;
+  color: #6b6b6b;
+  cursor: pointer;
+}
+
+.CP {
+  position: absolute;
+  bottom: 13.1568em;
+}
+.w {
+  width: 112px;
+}
+
+@keyframes growgreen {
+  from {
+    width: 180px;
+  }
+  to {
+    width: 190px;
+  }
+}
+
+.eclipse {
+  width: 180px;
+  position: absolute;
+  bottom: 11em;
+}
+
+.animate {
+  animation-name: growgreen;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.eclipseUser {
+  width: 370px;
+  position: absolute;
+  left: 14em;
+  bottom: 7em;
+}
+
+.userPicked {
+  width: 143px;
+  position: absolute;
+  bottom: 14em;
+  left: 21em;
+}
+
+.youpicked {
+  position: absolute;
+  bottom: 25em;
+  left: 20.5em;
+}
+
+.playagainUser {
+  position: absolute;
+  left: 44em;
+  bottom: 18em;
+}
+
+.pcpicked {
+  position: absolute;
+  left: 67em;
+  bottom: 20.5em;
+}
+
+.compPicked {
+  width: 143px;
+  position: absolute;
+  right: 17em;
+  bottom: 13em;
+}
+
+.PAU {
+  position: absolute;
+  bottom: -5em;
+  left: 1em;
+}
+
+.youpickedT,
+.userPickedT,
+.pcpickedT {
+  position: absolute;
+}
+
+.youpickedT {
+  bottom: 22em;
+  left: 22em;
+}
+
+.userPickedT {
+  bottom: 14em;
+  left: 22.5em;
+}
+
+.tieup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 21em;
+  left: 44em;
+}
+
+.replay {
+  position: absolute;
+  top: 6em;
+}
+
+.pcpickedT {
+  bottom: 22em;
+  right: 20em;
+}
+
+.compPickedT {
+  width: 143px;
+  bottom: 14em;
+  position: absolute;
+  right: 20em;
+}
+
+.rulesU {
+  position: fixed;
+  right: 9.5em;
+  bottom: 1.5em;
+  padding: 12px 32px;
+  background: #89c15e;
+  border: 1px white solid;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.rulesU:hover {
+  background: #6b6b6b;
 }

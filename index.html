@@ -14,7 +14,7 @@
         <div><h4>COMPUTER<br>SCORE</h4><h1>0</h1></div>
         <div><h4>YOUR<br>SCORE</h4><h1>0</h1></div>
     </div>
-    <div id="game" class="game">
+    <div id="game" class="game" style="visibility: hidden;">
         <div class="anchor"><img src="Resources/anchor.png" alt="">
             <div class="rock"><img class="anim" src="Resources/rock.png" alt="" onclick="rock()"></div>
             <div class="paper"><img class="anim" src="Resources/paper.png" onclick="paper()" alt=""></div>
@@ -31,6 +31,59 @@
         <li>If both players lay down the same hand, each player lays down another hand</li>
     </div>
     </div>
+    <div id="comp" class="comp" style="visibility: hidden;">
+        <div class="you">
+            <p class="YP">YOU PICKED</p>
+            <img class="w" id="userpicked" src="Resources/paper.png" alt="YOU">    
+        </div>
+        <div class="playagain">
+            <p class="YL">YOU LOST</p>
+            <p class="AP">AGAINST PC</p>
+            <button class="PA" onclick="playAgain()">PLAY AGAIN</button>
+        </div>
+
+        <div class="compwin">
+            <p class="PK">PC PICKED</p>
+            <img style="width:180px" class="eclipse animate" src="Resources/COMPWINS/eclipse.png" alt="">
+            <img id="compPicked" class="w CP" src="Resources/rock.png" alt="">
+        </div>
+    </div>
+
+    <div id="user" class="user" style="visibility: visible;">
+        <div id="you">
+            <p class="youpicked YP">YOU PICKED</p>
+            <img src="Resources/COMPWINS/eclipse.png" alt="" class="eclipseUser">
+            <img src="Resources/paper.png" alt="" id="userpickedUW" class="userPicked">
+        </div>
+
+        <div class="playagainUser">
+            <p class="youwon YL">YOU WIN</p>
+            <p class="againstpc AP" >AGAINST PC</p>
+            <button class="PA PAU" onclick="playAgain()">PLAY AGAIN</button>
+        </div>
+
+        <div class="comp">
+            <p class="pcpicked YP">PC PICKED</p>
+            <img src="Resources/rock.png" alt="" id="compPickedUW" class="compPicked">
+        </div>
+        <button class="rulesU" onclick="location.href='congrats.html'">NEXT</button>
+    </div>
+
+    <div id="tie" style="visibility: hidden;">
+        <div class="userchoice">
+            <p class="youpickedT YP">YOU PICKED</p>
+            <img class="userPickedT" src="Resources/paper.png" alt="" id="userpickedtie" style="width: 143px;">
+        </div>
+        <div class="tieup">
+            <p class="YL">TIE UP</p>
+            <button class="replay PA" onclick="playAgain()">REPLAY</button>
+        </div>
+        <div>
+            <p class="pcpickedT YP">PC PICKED</p>
+            <img class="compPickedT" src="Resources/rock.png" alt="" id="compPickedtie" style="width: 143px;">
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

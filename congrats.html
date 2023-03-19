@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #89C15E;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="congratstyle.css">
+    <title>Congratulations!</title>
+</head>
+<body>
+    <div>
+        <img class="surround" src="Resources/HURRAY/Group 5.png" alt="">
+        <img src="Resources/HURRAY/Vector.png" alt=""></div>
+    <div class="text">
+        <img src="Resources/HURRAY/HURRAY!!.png" alt="">
+        <img src="Resources/HURRAY/YOU WON THE GAME.png" alt="">
+    </div>
+    <div>
+        <button class="playAgain" onclick="playAgain()">PLAY AGAIN</button>
+    </div>
+    <script>
+        function playAgain() {
+            localStorage.clear();
+            location.href="index.html";
+        }
+    </script>
+</body>
+</html>
