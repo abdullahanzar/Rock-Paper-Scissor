@@ -125,10 +125,10 @@
 
 @keyframes growgreen {
   from {
-    width: 180px;
+    width: 265px;
   }
   to {
-    width: 290px;
+    width: 215px;
   }
 }
 
@@ -263,10 +263,9 @@
 
 @keyframes growin {
   from {
-    width: 360px;
+    width: 350px;
   }
   to {
-    width: 300px;
+    width: 325px;
   }
 }
-
