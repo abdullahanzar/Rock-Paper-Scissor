@@ -70,7 +70,7 @@
 
 .PK {
   position: absolute;
-  bottom: 20em;
+  bottom: 24em;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -117,7 +117,7 @@
 
 .CP {
   position: absolute;
-  bottom: 13.1568em;
+  bottom: 16.1568em;
 }
 .w {
   width: 112px;
@@ -128,14 +128,14 @@
     width: 180px;
   }
   to {
-    width: 190px;
+    width: 290px;
   }
 }
 
 .eclipse {
   width: 180px;
   position: absolute;
-  bottom: 11em;
+  bottom: 12em;
 }
 
 .animate {
@@ -150,14 +150,14 @@
 .eclipseUser {
   width: 370px;
   position: absolute;
-  left: 14em;
+  left: 15em;
   bottom: 7em;
 }
 
 .userPicked {
   width: 143px;
   position: absolute;
-  bottom: 14em;
+  bottom: 13.5em;
   left: 21em;
 }
 
@@ -251,3 +251,22 @@
 .rulesU:hover {
   background: #6b6b6b;
 }
+
+.eclipseanimate {
+  animation-name: growin;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes growin {
+  from {
+    width: 360px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
